@@ -1,22 +1,27 @@
 :root {
   --main-color: #212121;
-  --secondary-color: #2196F3;
+  --secondary-color: #2196f3;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
-{body
-  --font-family: var(--main-font);
-  --font-color: var(--main-color);
+
+body {
+  font-family: var(--main-font);
+  font-color: var(--main-color);
 }
 
 /* ======= COMPONENTS ======= */
 
-
-
-.address {
-    font-style: normal;
+.link {
+  text-decoration: none;
 }
 
+.navigation-list-link {
+  color: var(--main-color);
+}
+
+.address {
+  font-style: normal;
 }
 
 /* ======= END COMPONENT ======= */
@@ -24,24 +29,27 @@
 /* ======= HEADER ======= */
 
 .navigation-list-link,
-.address-mail,
-.address-phone-number {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    /* color: #2196F3;  */
+.mail,
+.phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  /* color: #2196F3;  */
 }
 
 .navigation-logo {
-  color:var(--secondary-color);
-  font-style: var(--secondary-font);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
-/* identical to box height */
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+}
 
-letter-spacing: 0.03em;
-
+.first-logo {
+  color: var(--secondary-color);
 }
 
 .mail,
@@ -59,47 +67,54 @@ letter-spacing: 0.03em;
 .mail:focus,
 .phone-number:hover,
 .phone-number:focus {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
+
 /* ======= END HEADER ======= */
 
 /* ======= HTML MAIN ======= */
- .main-tittle {
+.main-tittle {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .tittle-button {
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
-.text-item{
+.text-item {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.description{
+.lorem {
+  font-weight: 700;
+}
+
+.description {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #757575;
 }
-.about-us{
+.about-us {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -107,7 +122,6 @@ letter-spacing: 0.03em;
 }
 
 .team-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -125,10 +139,9 @@ letter-spacing: 0.03em;
 
 /* ======= END HTML MAIN ======= */
 
-
-
 /* ======= PORTFOLIO MAIN ======= */
 .port-images-tittle {
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -140,20 +153,45 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.menu-btn-link {
+.menu-btn-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  cursor: pointer;
   text-align: center;
-    /* color: #FFFFFF; */
+  /* color: #FFFFFF; */
+}
+
+.menu-btn-text {
+  cursor: pointer;
 }
 
 /* ======= END PORTFOLIO MAIN ======= */
 
-
 /* ======= FOOTER ======= */
+.address,
+.navigation-logo2 {
+  color: #ffffff;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.navigation-logo2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  font-family: var(--secondary-font);
+}
 .address-mail,
 .address-phone-number {
   color: rgba(255, 255, 255, 0.6);
